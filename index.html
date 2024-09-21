@@ -7,7 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="h-screen flex justify-center items-center">
+    <main class="max-w-[425px]  border-blue-500">
+     <div >
+
+        <!--logo-->
+        <div class="img"><img src="./img/Chase-Bank-Logo-PNG-File.png" alt=""></div>
+        
+        <!--login form start-->
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium">Mobile Number</span>
+                </label>
+                <!--number-->
+                <input id="number" type="text" placeholder="Enter your number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-base font-medium">4 Digit Pin</span>
+                </label>
+                <!--pin-->
+                <input id="pin" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+               
+              </div>
+              <div class="form-control mt-6">
+                <!--login btn-->
+                <button id="login" class="btn bg-[#0874F2] text-white">Login</button>
+              </div>
+            </form>
+          </div>
+         <!--login form ends-->
+     </div>
+    </main>
+    <script src="./js/common.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
